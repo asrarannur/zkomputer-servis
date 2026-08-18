@@ -43,7 +43,7 @@ const consultationSteps = [
 function BrandMark({ compact = false }: { compact?: boolean }) {
   return (
     <a className="brand-mark" href="#beranda" aria-label="Z KOMPUTER — kembali ke atas">
-      <img className="brand-mark__icon" src="/assets/zkomputer-logo.png" alt="Logo Z KOMPUTER" />
+      <img className="brand-mark__icon" src="/assets/zkomputer-logo-v2.webp" alt="Logo Z KOMPUTER" width={320} height={320} decoding="async" />
       {!compact && <span className="brand-mark__type"><strong>Z KOMPUTER</strong><small>LAPTOP SERVICE</small></span>}
     </a>
   );
@@ -99,12 +99,12 @@ export default function Home() {
             <div className="hero-meta"><span><MapPin size={15} /> Batua, Makassar</span><span className="meta-divider" /><span><Phone size={14} /> {BUSINESS.phone}</span></div>
           </div>
           <div className="hero-visual" aria-label="Meja kerja teknisi laptop">
-            <div className="hero-image-frame"><img src="/assets/hero-workbench.jpg" alt="Pemeriksaan laptop di meja kerja teknisi" /></div>
+            <div className="hero-image-frame"><picture><source media="(max-width: 700px)" srcSet="/assets/hero-workbench-960-v2.webp" type="image/webp" /><img src="/assets/hero-workbench-v2.webp" alt="Pemeriksaan laptop di meja kerja teknisi" width={1600} height={900} fetchPriority="high" decoding="async" /></picture></div>
             <div className="inspection-card">
               <div className="inspection-card__top"><span className="signal-dot" /><span>CHECK-IN SERVIS</span></div>
               <div className="inspection-card__line" /><p>Ceritakan gejalanya sebelum datang—lebih terarah, lebih cepat mulai.</p><ArrowDownRight size={22} />
             </div>
-            <div className="brand-stamp"><img src="/assets/zkomputer-logo.png" alt="" /><span>ZK//DIAGNOSTIC</span></div>
+            <div className="brand-stamp"><img src="/assets/zkomputer-logo-v2.webp" alt="" width={320} height={320} decoding="async" /><span>ZK//DIAGNOSTIC</span></div>
             <div className="corner-code">ZK/05.1579<br />119.4630</div>
           </div>
         </section>
@@ -125,7 +125,7 @@ export default function Home() {
         </section>
 
         <section className="process-section" id="proses" aria-labelledby="process-title">
-          <div className="process-visual"><img src="/assets/service-detail.jpg" alt="Detail pemeriksaan komponen laptop" /><div className="process-visual__label"><span />TELITI DALAM SETIAP LANGKAH</div></div>
+          <div className="process-visual"><picture><source media="(max-width: 700px)" srcSet="/assets/service-detail-700-v2.webp" type="image/webp" /><img src="/assets/service-detail-v2.webp" alt="Detail pemeriksaan komponen laptop" width={1100} height={1375} loading="lazy" decoding="async" /></picture><div className="process-visual__label"><span />TELITI DALAM SETIAP LANGKAH</div></div>
           <div className="process-copy">
             <div className="section-kicker section-kicker--dark"><span>02</span><div /><p>ALUR YANG SEDERHANA</p><b>ZK</b></div>
             <h2 id="process-title">Satu percakapan,<br /><em>arah yang lebih pasti.</em></h2>
