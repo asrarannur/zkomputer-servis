@@ -143,12 +143,16 @@ export default function Home() {
               <div className="location-hours"><Clock3 size={18} /><span>Jam operasional dapat berubah. Konfirmasi melalui WhatsApp sebelum berkunjung.</span></div>
               <div className="location-actions"><a className="button button--dark" href={BUSINESS.directions} target="_blank" rel="noreferrer"><MapPin size={18} /> Buka petunjuk arah <DirectionArrow /></a><a className="text-link" href={BUSINESS.mapsUrl} target="_blank" rel="noreferrer">Lihat di Google Maps <ExternalLink size={15} /></a></div>
             </div>
-            <div className="map-frame location-schematic" aria-label="Koordinat lokasi Z KOMPUTER di Batua, Makassar">
-              <div className="schematic-route schematic-route--a" /><div className="schematic-route schematic-route--b" /><div className="schematic-route schematic-route--c" />
-              <div className="map-badge"><span className="signal-dot" /> Z KOMPUTER</div>
-              <div className="location-pin"><span>Z</span></div>
-              <div className="coordinate-card"><small>LOCATION PIN / ACTIVE</small><strong>-5.1579042<br />119.4630589</strong><span>BATUA · MAKASSAR</span></div>
-              <div className="route-status"><span className="signal-dot" /> RUTE TERSEDIA DI GOOGLE MAPS</div>
+            <div className="map-frame location-map">
+              <iframe
+                title="Peta lokasi Z KOMPUTER di Batua, Makassar"
+                src="https://www.google.com/maps?q=-5.1579042%2C119.4630589&z=17&output=embed"
+                width="100%"
+                height="100%"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
             </div>
           </div>
         </section>
