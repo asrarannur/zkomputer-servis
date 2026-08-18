@@ -70,7 +70,7 @@ export default function Home() {
         <div className="header-inner">
           <BrandMark />
           <nav className="desktop-nav" aria-label="Navigasi utama">
-            <a href="#layanan">Kendala</a><a href="#proses">Alur</a><a href="#lokasi">Lokasi</a>
+            <a href="#layanan">Kendala</a><a href="#proses">Alur</a><a href="#lokasi">Lokasi</a><a href="/kontak">Kontak</a>
           </nav>
           <a className="header-contact" href={BUSINESS.whatsapp} target="_blank" rel="noreferrer"><Send size={16} fill="currentColor" /><span>Chat WhatsApp</span></a>
           <button className="menu-trigger" type="button" aria-label={menuOpen ? "Tutup menu" : "Buka menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen(open => !open)}>
@@ -81,6 +81,7 @@ export default function Home() {
           <a href="#layanan" onClick={() => setMenuOpen(false)}>Kendala umum</a>
           <a href="#proses" onClick={() => setMenuOpen(false)}>Alur konsultasi</a>
           <a href="#lokasi" onClick={() => setMenuOpen(false)}>Lokasi workshop</a>
+          <a href="/kontak" onClick={() => setMenuOpen(false)}>Halaman kontak</a>
           <a href={BUSINESS.whatsapp} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)}>Chat WhatsApp <DirectionArrow /></a>
         </div>
       </header>
